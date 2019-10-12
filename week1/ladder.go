@@ -21,7 +21,7 @@ func ladder(n int) {
 		}
 
 	} else {
-		fmt.Println("wrong number")
+		fmt.Println("negative number given")
 	}
 }
 
