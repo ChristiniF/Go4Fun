@@ -8,12 +8,12 @@ func sqrt(y float64) float64 {
 	dy0 := 2 * x0
 	x := x0 + ((y - y0) / dy0)
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 1000; i++ {
 		x0 = x
 		y0 = x0 * x0
 		dy0 = 2 * x0
 		x = x0 + ((y - y0) / dy0)
-		if (y - x*x) > 0.00001 {
+		if (y - x*x) > 0.000001 {
 			return x
 		}
 
